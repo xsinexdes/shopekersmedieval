@@ -1,0 +1,74 @@
+{
+ "ui.click": {
+  "sounds": [
+   {
+    "name": "shopkeepers:ui/click",
+    "volume": 1.0
+   }
+  ]
+ },
+ "ui.page": {
+  "sounds": [
+   {
+    "name": "shopkeepers:ui/page",
+    "volume": 1.0
+   }
+  ]
+ },
+ "ui.coin": {
+  "sounds": [
+   {
+    "name": "shopkeepers:ui/coin",
+    "volume": 1.0
+   }
+  ]
+ },
+ "ui.deposit": {
+  "sounds": [
+   {
+    "name": "shopkeepers:ui/deposit",
+    "volume": 1.0
+   }
+  ]
+ },
+ "ui.withdraw": {
+  "sounds": [
+   {
+    "name": "shopkeepers:ui/withdraw",
+    "volume": 1.0
+   }
+  ]
+ },
+ "ui.error": {
+  "sounds": [
+   {
+    "name": "shopkeepers:ui/error",
+    "volume": 1.0
+   }
+  ]
+ },
+ "trade.success": {
+  "sounds": [
+   {
+    "name": "shopkeepers:trade/success",
+    "volume": 1.0
+   }
+  ]
+ },
+ "event.horn": {
+  "sounds": [
+   {
+    "name": "shopkeepers:event/horn",
+    "volume": 1.0
+   }
+  ]
+ },
+ "event.bell": {
+  "sounds": [
+   {
+    "name": "shopkeepers:event/bell",
+    "volume": 1.0
+   }
+  ]
+ }
+}

@@ -1,0 +1,42 @@
+plugins {
+	id 'java'
+}
+
+group = 'me.medieval'
+version = '1.0.0'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+}
+
+repositories {
+	mavenCentral()
+	maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+	maven { url = 'https://oss.sonatype.org/content/repositories/snapshots/' }
+	// API oficial de Shopkeepers
+	maven { url = 'https://raw.githubusercontent.com/Shopkeepers/Repository/main/releases/' }
+}
+
+dependencies {
+	// Compilamos contra la API de 1.21.1 y contra Shopkeepers 2.24.0 (la ultima que soporta 1.21.1)
+	compileOnly 'org.spigotmc:spigot-api:1.21.1-R0.1-SNAPSHOT'
+	compileOnly 'com.nisovin.shopkeepers:ShopkeepersAPI:2.24.0'
+	compileOnly 'org.checkerframework:checker-qual:3.46.0'
+}
+
+tasks.withType(JavaCompile).configureEach {
+	options.encoding = 'UTF-8'
+	options.release = 21
+}
+
+processResources {
+	filesMatching('plugin.yml') {
+		expand(version: project.version)
+	}
+}
+
+jar {
+	archiveFileName = "ShopkeepersMedieval-${project.version}.jar"
+}
