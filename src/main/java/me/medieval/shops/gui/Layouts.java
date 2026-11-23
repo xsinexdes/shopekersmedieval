@@ -83,7 +83,34 @@ public final class Layouts {
 				new Spec("reset", 3, 0, 3),
 				new Spec("actualizar", 3, 3, 3),
 				new Spec("abrirbanco", 3, 6, 3),
+				new Spec("trofeos", 4, 0, 3),
+				new Spec("misiones", 4, 3, 3),
+				new Spec("ciudad", 4, 6, 3),
 				new Spec("cerrar", 5, 3, 3));
+
+	public static final Layout CITY = new Layout('\uE00E',
+				new Spec("impuestos", 1, 0, 3),
+				new Spec("precios", 1, 3, 3),
+				new Spec("trofeos", 1, 6, 3),
+				new Spec("spawn", 2, 0, 3),
+				new Spec("zona", 2, 3, 3),
+				new Spec("tesoreria", 2, 6, 3),
+				new Spec("renombrar", 3, 0, 3),
+				new Spec("ir", 3, 3, 3),
+				new Spec("borrar", 3, 6, 3),
+				new Spec("volver", 5, 0, 4),
+				new Spec("cerrar", 5, 5, 4));
+
+	public static final Layout CITY_PRICES = new Layout('\uE00F',
+				new Spec("forja", 1, 0, 3),
+				new Spec("granja", 1, 3, 3),
+				new Spec("alquimia", 1, 6, 3),
+				new Spec("minas", 2, 0, 3),
+				new Spec("construccion", 2, 3, 3),
+				new Spec("bazar", 2, 6, 3),
+				new Spec("reset", 3, 3, 3),
+				new Spec("volver", 5, 0, 4),
+				new Spec("cerrar", 5, 5, 4));
 
 	private Layouts() {
 	}
